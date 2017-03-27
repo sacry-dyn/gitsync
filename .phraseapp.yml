@@ -1,0 +1,13 @@
+phraseapp:
+  host: http://localhost:3000/api
+  project_id: 1544de7e7f7e828997fc7ef35cde2233
+  push:
+    sources:
+    - file: ./MessagesBundle_<locale_name>.properties
+      params:
+        file_format: properties
+  pull:
+    targets:
+    - file: ./MessagesBundle_<locale_name>.properties
+      params:
+        file_format: properties
