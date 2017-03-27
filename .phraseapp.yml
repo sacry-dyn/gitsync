@@ -11,3 +11,5 @@ phraseapp:
     - file: ./MessagesBundle_<locale_name>.properties
       params:
         file_format: properties
+        format_options:
+          escape_single_quotes: false
