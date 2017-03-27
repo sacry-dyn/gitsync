@@ -3,9 +3,16 @@ phraseapp:
   project_id: 1544de7e7f7e828997fc7ef35cde2233
   push:
     sources:
-    - file: ./MessagesBundle_<locale_name>.properties
+    - file: ./<locale_name>.csv
       params:
-        file_format: properties
+        file_format: csv
+        format_options:
+          key_index: 100
+          translation_index: 200
+          comment_index: 300
+          column_separator: ","
+          quote_char: "'"
+          enable_pluralization: true
   pull:
     targets:
     - file: ./MessagesBundle_<locale_name>.properties
